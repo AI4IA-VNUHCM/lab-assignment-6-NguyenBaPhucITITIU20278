@@ -15,7 +15,12 @@ Ex:
 
 void Ex4(char *str){
 	//Your codes here
-	
+	int k = 0;
+	for(int i = 0; i < strlen(str); ++i) {
+		if(str[i] != " "){
+			printf("%s", str[i]); k = 0;
+		}
+	}
 }
 
 int main(int argc, char *argv[]) {
